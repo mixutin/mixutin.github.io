@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://raw.githubusercontent.com; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Dauntless Revived · a Dauntless private-server revival (1.4.4)</title>
+<meta name="description" content="Dauntless's servers shut down on 30 May 2025. Dauntless Revived runs the genuine 1.4.4 client on a self-hosted fork of Undaunted. What works, roadmap and FAQ.">
+<meta name="author" content="mixutin">
+<link rel="canonical" href="https://mixutin.github.io/projects/dauntless-revived/">
+<link rel="alternate" hreflang="en" href="https://mixutin.github.io/projects/dauntless-revived/">
+<link rel="alternate" hreflang="fi" href="https://mixutin.github.io/fi/projects/dauntless-revived/">
+<link rel="alternate" hreflang="x-default" href="https://mixutin.github.io/projects/dauntless-revived/">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0d0b0a" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f8f1e9" media="(prefers-color-scheme: light)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&amp;family=JetBrains+Mono:wght@400..700&amp;display=swap">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script src="/assets/js/roadmap.js" defer></script>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="mixutin">
+<meta property="og:title" content="Dauntless Revived · a Dauntless private-server revival">
+<meta property="og:description" content="Dauntless's official servers shut down on 30 May 2025. Dauntless Revived runs the genuine 1.4.4 client against a self-hosted server, a fork of Undaunted.">
+<meta property="og:url" content="https://mixutin.github.io/projects/dauntless-revived/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="fi_FI">
+<meta property="og:image" content="https://mixutin.github.io/assets/og/og-dauntless-revived.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The words Dauntless Revived beside an abstract orange and teal crystal shape, with the line: a private-server revival that runs the genuine 1.4.4 client, fork of Undaunted.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dauntless Revived · a Dauntless private-server revival">
+<meta name="twitter:description" content="Dauntless's official servers shut down on 30 May 2025. Dauntless Revived runs the genuine 1.4.4 client against a self-hosted server.">
+<meta name="twitter:image" content="https://mixutin.github.io/assets/og/og-dauntless-revived.png">
+<meta name="twitter:image:alt" content="The words Dauntless Revived beside an abstract orange and teal crystal shape, with the line: a private-server revival that runs the genuine 1.4.4 client, fork of Undaunted.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://mixutin.github.io/projects/dauntless-revived/#software",
+      "name": "Dauntless Revived",
+      "description": "A private-server revival of Dauntless, the Phoenix Labs co-op monster-hunting game whose official servers shut down on 30 May 2025. It runs the genuine Dauntless 1.4.4 client (October 2020, Unreal Engine 4) against a self-hosted backend. It is a modified fork of Undaunted by gwog (Gregory Morford) and contributors.",
+      "url": "https://mixutin.github.io/projects/dauntless-revived/",
+      "codeRepository": "https://github.com/mixutin/dauntless-revived",
+      "programmingLanguage": ["TypeScript", "C++", "PowerShell"],
+      "runtimePlatform": "Node.js",
+      "license": "https://spdx.org/licenses/AGPL-3.0-only.html",
+      "inLanguage": "en",
+      "dateModified": "2026-09-21",
+      "keywords": ["Dauntless", "private server", "game preservation", "Undaunted", "Dauntless 1.4.4"],
+      "author": {
+        "@type": "Person",
+        "@id": "https://mixutin.github.io/#person",
+        "name": "mixutin",
+        "url": "https://mixutin.github.io/",
+        "sameAs": ["https://github.com/mixutin"]
+      },
+      "isBasedOn": {
+        "@type": "SoftwareSourceCode",
+        "name": "Undaunted",
+        "url": "https://github.com/SyST3MDeV/Undaunted",
+        "codeRepository": "https://github.com/SyST3MDeV/Undaunted",
+        "author": { "@type": "Person", "name": "Gregory Morford", "alternateName": "gwog" }
+      },
+      "about": {
+        "@type": "VideoGame",
+        "name": "Dauntless",
+        "genre": "Co-op monster-hunting action RPG",
+        "author": { "@type": "Organization", "name": "Phoenix Labs" },
+        "gamePlatform": "PC"
+      },
+      "subjectOf": {
+        "@type": "WebSite",
+        "name": "Dauntless Revived docs",
+        "url": "https://mixutin.github.io/dauntless-revived/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mixutin.github.io/projects/dauntless-revived/#faq",
+      "url": "https://mixutin.github.io/projects/dauntless-revived/",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can you still play Dauntless?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not on the official servers: Phoenix Labs shut them down on 30 May 2025, and the game needs a server to work. It can run against a replacement server instead. Dauntless Revived is one: it runs the 1.4.4 client (October 2020) for a small group, and anyone who owns that client can host it for their own group."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a public Dauntless private server I can join?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not this one. Dauntless Revived is run privately for a few friends, and there is no public server to join. You can self-host it from the repository, or play if a host invites you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which version of Dauntless does it run?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The genuine, unmodified Dauntless 1.4.4 client from October 2020, built on Unreal Engine 4. Content released after November 2020 is not in that build. The project also studied the final 2.1.1 client, and those findings are in the docs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need an Epic Games account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Each player has an account on the host's server and logs in with a personal account key. The 1.4.4 client is older than the game's Epic Online Services login."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it affiliated with Phoenix Labs or Epic Games?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It is an unofficial, non-commercial fan project. “Dauntless” is a trademark of its owners. No game files are distributed by this site or the repository, so you need your own copy of the 1.4.4 client."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is it different from Undaunted?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dauntless Revived is a fork of Undaunted by gwog (Gregory Morford) and contributors, and the server-mode DLL, deploy server, metagame and launcher are their work. The fork adds hardening (services listen only on the host PC by default, a port clash is a hard error, every request is logged), a friend kit and documentation, and it is working on saving progression (M2)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I help?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Questions, ideas and play-test reports go to GitHub Discussions. Please report security problems privately through a security advisory. The code is AGPL-3.0, so you can also run and change your own copy."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "mixutin", "item": "https://mixutin.github.io/" },
+        { "@type": "ListItem", "position": 2, "name": "Dauntless Revived", "item": "https://mixutin.github.io/projects/dauntless-revived/" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body class="theme-ember">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/" aria-label="mixutin, home">
+      <img src="/favicon.svg" alt="" width="28" height="28">
+      <span>mixutin</span>
+    </a>
+    <nav class="site-nav" aria-label="On this page">
+      <ul>
+        <li><a href="#status">Status</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#credits">Credits</a></li>
+      </ul>
+    </nav>
+    <nav class="lang" aria-label="Language">
+      <a href="/projects/dauntless-revived/" hreflang="en" lang="en" aria-current="page" aria-label="English">EN</a>
+      <a href="/fi/projects/dauntless-revived/" hreflang="fi" lang="fi" aria-label="Suomeksi">FI</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="p-hero" aria-labelledby="page-title">
+    <div class="wrap">
+      <div class="shard" aria-hidden="true"></div>
+      <div class="content">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">mixutin</a></li>
+            <li><a href="/#projects">projects</a></li>
+            <li><span aria-current="page">dauntless-revived</span></li>
+          </ol>
+        </nav>
+        <h1 id="page-title">Dauntless <span class="ember">Revived</span></h1>
+        <p class="lede">Dauntless's official servers shut down on 30 May 2025, and the game stopped working. Dauntless Revived brings it back on a server you run yourself.</p>
+        <p class="credit"><strong>Built on Undaunted.</strong> Dauntless Revived is a modified fork of <a href="https://github.com/SyST3MDeV/Undaunted">Undaunted</a> by gwog (Gregory Morford) and contributors. Their work made this possible, and the fork stays AGPL-3.0 like the original.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="https://mixutin.github.io/dauntless-revived/">Read the docs <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn" href="https://github.com/mixutin/dauntless-revived">Source on GitHub</a>
+          <a class="btn" href="https://github.com/mixutin/dauntless-revived/blob/dauntless-revived/ROADMAP.md">Live roadmap</a>
+        </div>
+        <dl class="facts">
+          <div><dt>game</dt><dd>Dauntless, by Phoenix Labs</dd></div>
+          <div><dt>client</dt><dd>Genuine 1.4.4 (Oct 2020, Unreal Engine 4)</dd></div>
+          <div><dt>server</dt><dd>Self-hosted fork of Undaunted</dd></div>
+          <div><dt>license</dt><dd>AGPL-3.0</dd></div>
+          <div><dt>status</dt><dd>Solo play works; friends next</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="why" aria-labelledby="why-title">
+    <div class="wrap">
+      <p class="kicker" aria-hidden="true"><span class="hex">0x01</span><span>why</span></p>
+      <h2 id="why-title">Why this exists</h2>
+      <div class="prose">
+        <p>Dauntless was a free-to-play co-op monster-hunting game from Phoenix Labs. Players teamed up to hunt huge monsters, then crafted weapons and armour from what they brought back.</p>
+        <p>Everything went through Phoenix Labs' online servers: logging in, your character, your gear, even starting a hunt. When those servers shut down on 30 May 2025, the game stopped working, even for people who still had it installed.</p>
+        <p>Dauntless Revived is a replacement server. It answers the game's calls in place of Phoenix Labs' servers, so a small group can play again. It is a preservation project: nothing is sold, and no game files are distributed by this site or the repository.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="status" aria-labelledby="status-title">
+    <div class="wrap">
+      <p class="kicker" aria-hidden="true"><span class="hex">0x02</span><span>status</span></p>
+      <h2 id="status-title">What works today, and what's next</h2>
+      <div class="split">
+        <div class="card">
+          <h3>Works today</h3>
+          <ul class="checks">
+            <li>Log in with a personal account key. No Epic account needed.</li>
+            <li>The tutorial, then Ramsgate, the hub city.</li>
+            <li>The Training Dojo, started only when someone goes there.</li>
+            <li>Real hunts: a Lesser Boreus and a pursuit have been played.</li>
+            <li>Crafting.</li>
+            <li>Inventory, gear and quests are saved and survive restarts.</li>
+            <li>Automatic backups every hour.</li>
+            <li>A friend kit: a hash-checked setup and launcher, ready for when friends can connect.</li>
+          </ul>
+          <p class="fine">All of this is tested solo, by the host, on the host PC.</p>
+        </div>
+        <div class="card">
+          <h3>Not yet</h3>
+          <ul class="checks open">
+            <li>Friends over the internet, planned through Tailscale (a private network between PCs) <span class="tag">M1</span></li>
+            <li>Parties and the friends list <span class="tag">M1</span></li>
+            <li>Real progression and the Hunt Pass, in progress <span class="tag">M2</span></li>
+            <li>Bounties <span class="tag">M2</span></li>
+            <li>Multiple loadouts <span class="tag">M2</span></li>
+            <li>Text chat, designed as a small local XMPP server <span class="tag">M3</span></li>
+          </ul>
+          <p class="fine">It is not a public server. It runs for a few friends, and anyone can self-host it from the repository.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <p class="kicker" aria-hidden="true"><span class="hex">0x03</span><span>how it works</span></p>
+      <h2 id="how-title">How it works, in four steps</h2>
+      <ol class="steps">
+        <li>
+          <h3>You start the game</h3>
+          <p>Each player uses their own copy of the genuine Dauntless 1.4.4 client. Two small files from Undaunted sit next to it: a <code>dxgi.dll</code> proxy that loads <code>UndauntedInternalServer.dll</code>.</p>
+        </li>
+        <li>
+          <h3>The game calls the host, not Phoenix Labs</h3>
+          <p>Those files point the game's online calls at the backend (the "metagame") on the host's PC. It handles accounts, characters, inventory and matchmaking, and saves them in a SQLite database.</p>
+        </li>
+        <li>
+          <h3>A game server starts</h3>
+          <p>When you head out on a hunt, the deploy server starts a game server for it: another copy of the same game, switched into server mode. Ramsgate has its own server that is always running.</p>
+        </li>
+        <li>
+          <h3>You play</h3>
+          <p>Your game connects straight to that game server. Loot, items and quest progress are sent back to the backend and saved (XP, ranks and the Hunt Pass not yet, M2), and an hourly backup keeps a copy.</p>
+        </li>
+      </ol>
+
+      <figure class="diagram">
+        <svg class="dg-wide" viewBox="0 0 960 390" role="img" aria-labelledby="dgw-t dgw-d" xmlns="http://www.w3.org/2000/svg">
+          <title id="dgw-t">How Dauntless Revived fits together</title>
+          <desc id="dgw-d">On your PC, the genuine Dauntless 1.4.4 client with two Undaunted DLLs sends its online calls over HTTP to the backend (metagame) on the host PC. The backend asks the deploy server for a game server, the deploy server starts one, and your client then plays on that game server over UDP. Game servers send results and loot back to the backend.</desc>
+          <defs>
+            <marker id="dgw-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="dg-head" d="M0 0L10 5L0 10z"/></marker>
+            <marker id="dgw-c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="dg-head cool" d="M0 0L10 5L0 10z"/></marker>
+            <marker id="dgw-m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="dg-head dim" d="M0 0L10 5L0 10z"/></marker>
+          </defs>
+          <rect class="dg-zone" x="10" y="16" width="262" height="304" rx="12"/>
+          <text class="dg-zone-label" x="26" y="38">YOUR PC</text>
+          <rect class="dg-zone" x="318" y="16" width="630" height="304" rx="12"/>
+          <text class="dg-zone-label" x="334" y="38">HOST PC</text>
+
+          <path class="dg-line" d="M256 110H336" marker-end="url(#dgw-a)"/>
+          <path class="dg-line" d="M478 172V206" marker-end="url(#dgw-a)"/>
+          <path class="dg-line" d="M618 256H678" marker-end="url(#dgw-a)"/>
+          <path class="dg-line dim" d="M806 140V110H622" marker-end="url(#dgw-m)"/>
+          <path class="dg-line cool" d="M141 218V350H806V306" marker-start="url(#dgw-c)" marker-end="url(#dgw-c)"/>
+
+          <rect class="dg-box hot" x="26" y="48" width="230" height="170" rx="10"/>
+          <text class="dg-label" x="42" y="76">client</text>
+          <text class="dg-title" x="42" y="106">Dauntless 1.4.4</text>
+          <text class="dg-sub" x="42" y="132">your own copy,</text>
+          <text class="dg-sub" x="42" y="154">unmodified</text>
+          <text class="dg-sub" x="42" y="176">+ 2 Undaunted DLLs</text>
+
+          <rect class="dg-box" x="338" y="48" width="280" height="124" rx="10"/>
+          <text class="dg-label" x="354" y="76">metagame · TCP 61000</text>
+          <text class="dg-title" x="354" y="106">Backend</text>
+          <text class="dg-sub" x="354" y="132">accounts, saves, matchmaking</text>
+          <text class="dg-sub" x="354" y="154">SQLite + hourly backups</text>
+
+          <rect class="dg-box" x="338" y="208" width="280" height="96" rx="10"/>
+          <text class="dg-label" x="354" y="236">deploy server · TCP 61001</text>
+          <text class="dg-title" x="354" y="266">Deploy server</text>
+          <text class="dg-sub" x="354" y="290">starts game servers</text>
+
+          <rect class="dg-box cool" x="680" y="140" width="252" height="164" rx="10"/>
+          <text class="dg-label" x="696" y="168">UDP 8770–8777</text>
+          <text class="dg-title" x="696" y="198">Game servers</text>
+          <text class="dg-sub" x="696" y="224">Ramsgate, always running</text>
+          <text class="dg-sub" x="696" y="246">one per hunt</text>
+          <text class="dg-sub" x="696" y="268">Training Dojo on demand</text>
+
+          <text class="dg-edge" x="297" y="92" text-anchor="middle">HTTP</text>
+          <circle class="dg-step" cx="297" cy="110" r="13"/>
+          <text class="dg-step-n" x="297" y="115" text-anchor="middle">1</text>
+          <circle class="dg-step" cx="504" cy="190" r="13"/>
+          <text class="dg-step-n" x="504" y="195" text-anchor="middle">2</text>
+          <circle class="dg-step" cx="642" cy="256" r="13"/>
+          <text class="dg-step-n" x="642" y="261" text-anchor="middle">3</text>
+          <text class="dg-edge" x="636" y="100">results, loot</text>
+          <circle class="dg-step" cx="470" cy="350" r="13"/>
+          <text class="dg-step-n" x="470" y="355" text-anchor="middle">4</text>
+          <text class="dg-edge" x="492" y="378">gameplay traffic (UDP)</text>
+        </svg>
+        <svg class="dg-tall" viewBox="0 0 360 692" role="img" aria-labelledby="dgt-t dgt-d" xmlns="http://www.w3.org/2000/svg">
+          <title id="dgt-t">How Dauntless Revived fits together</title>
+          <desc id="dgt-d">On your PC, the genuine Dauntless 1.4.4 client with two Undaunted DLLs sends its online calls over HTTP to the backend (metagame) on the host PC. The backend asks the deploy server for a game server, the deploy server starts one, and your client then plays on that game server over UDP.</desc>
+          <defs>
+            <marker id="dgt-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="dg-head" d="M0 0L10 5L0 10z"/></marker>
+            <marker id="dgt-c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="dg-head cool" d="M0 0L10 5L0 10z"/></marker>
+          </defs>
+          <rect class="dg-zone" x="8" y="8" width="344" height="160" rx="12"/>
+          <text class="dg-zone-label" x="22" y="30">YOUR PC</text>
+          <rect class="dg-zone" x="8" y="196" width="344" height="484" rx="12"/>
+          <text class="dg-zone-label" x="22" y="218">HOST PC</text>
+
+          <path class="dg-line" d="M157 156V230" marker-end="url(#dgt-a)"/>
+          <path class="dg-line" d="M157 350V396" marker-end="url(#dgt-a)"/>
+          <path class="dg-line" d="M157 498V540" marker-end="url(#dgt-a)"/>
+          <path class="dg-line cool" d="M292 99H326V603H294" marker-start="url(#dgt-c)" marker-end="url(#dgt-c)"/>
+
+          <rect class="dg-box hot" x="22" y="42" width="270" height="114" rx="10"/>
+          <text class="dg-label" x="38" y="68">client</text>
+          <text class="dg-title" x="38" y="96">Dauntless 1.4.4</text>
+          <text class="dg-sub" x="38" y="120">your own copy, unmodified</text>
+          <text class="dg-sub" x="38" y="142">+ 2 Undaunted DLLs</text>
+
+          <rect class="dg-box" x="22" y="232" width="270" height="118" rx="10"/>
+          <text class="dg-label" x="38" y="258">metagame · TCP 61000</text>
+          <text class="dg-title" x="38" y="286">Backend</text>
+          <text class="dg-sub" x="38" y="310">accounts, saves, matchmaking</text>
+          <text class="dg-sub" x="38" y="332">SQLite + hourly backups</text>
+
+          <rect class="dg-box" x="22" y="398" width="270" height="100" rx="10"/>
+          <text class="dg-label" x="38" y="424">deploy server · TCP 61001</text>
+          <text class="dg-title" x="38" y="452">Deploy server</text>
+          <text class="dg-sub" x="38" y="476">starts game servers</text>
+
+          <rect class="dg-box cool" x="22" y="542" width="270" height="122" rx="10"/>
+          <text class="dg-label" x="38" y="568">UDP 8770–8777</text>
+          <text class="dg-title" x="38" y="596">Game servers</text>
+          <text class="dg-sub" x="38" y="620">Ramsgate, always running</text>
+          <text class="dg-sub" x="38" y="642">one per hunt, Dojo on demand</text>
+
+          <circle class="dg-step" cx="157" cy="184" r="13"/>
+          <text class="dg-step-n" x="157" y="189" text-anchor="middle">1</text>
+          <text class="dg-edge" x="180" y="189">HTTP</text>
+          <circle class="dg-step" cx="157" cy="368" r="13"/>
+          <text class="dg-step-n" x="157" y="373" text-anchor="middle">2</text>
+          <circle class="dg-step" cx="157" cy="514" r="13"/>
+          <text class="dg-step-n" x="157" y="519" text-anchor="middle">3</text>
+          <circle class="dg-step" cx="326" cy="420" r="13"/>
+          <text class="dg-step-n" x="326" y="425" text-anchor="middle">4</text>
+          <text class="dg-edge" x="326" y="456" text-anchor="middle">UDP</text>
+        </svg>
+        <figcaption>An original diagram, not game art. Your PC runs the unmodified game. The host PC runs the backend, the deploy server and the game servers. The ports shown are the defaults.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" id="roadmap" aria-labelledby="roadmap-title">
+    <div class="wrap">
+      <p class="kicker" aria-hidden="true"><span class="hex">0x04</span><span>roadmap</span></p>
+      <h2 id="roadmap-title">Roadmap progress</h2>
+      <p class="section-intro">The project's checklist lives in <a href="https://github.com/mixutin/dauntless-revived/blob/dauntless-revived/ROADMAP.md">ROADMAP.md</a>. When this page loads, the bars count its done and open items for each milestone, straight from the file.</p>
+      <ol class="milestones"
+          data-roadmap-src="https://raw.githubusercontent.com/mixutin/dauntless-revived/dauntless-revived/ROADMAP.md"
+          data-fmt-count="{done} of {total} done"
+          data-fmt-none="no items yet"
+          data-fmt-status="Counted just now from ROADMAP.md: {done} of {total} checklist items done."
+          data-fmt-error="The live checklist couldn't be loaded just now.">
+        <li class="ms" data-milestone="0">
+          <div class="ms-head"><span class="ms-id">M0</span><span class="ms-name">Safety net</span><span class="ms-count" data-count></span></div>
+          <div class="ms-bar" aria-hidden="true"><span class="ms-fill"></span></div>
+          <p class="ms-desc">Backups, a restart test, and no calls to outside services, before anything else changes.</p>
+        </li>
+        <li class="ms" data-milestone="1">
+          <div class="ms-head"><span class="ms-id">M1</span><span class="ms-name">Play together</span><span class="ms-count" data-count></span></div>
+          <div class="ms-bar" aria-hidden="true"><span class="ms-fill"></span></div>
+          <p class="ms-desc">Tailscale, invite codes, usernames, parties and the friend kit.</p>
+        </li>
+        <li class="ms" data-milestone="2">
+          <div class="ms-head"><span class="ms-id">M2</span><span class="ms-name">Everything you earn is saved</span><span class="ms-count" data-count></span></div>
+          <div class="ms-bar" aria-hidden="true"><span class="ms-fill"></span></div>
+          <p class="ms-desc">Progression, the Hunt Pass, bounties, loadouts and daily timers.</p>
+        </li>
+        <li class="ms" data-milestone="3">
+          <div class="ms-head"><span class="ms-id">M3</span><span class="ms-name">The full game loop</span><span class="ms-count" data-count></span></div>
+          <div class="ms-bar" aria-hidden="true"><span class="ms-fill"></span></div>
+          <p class="ms-desc">Other hunt types, cosmetics, the mailbox, the store, text chat and events.</p>
+        </li>
+        <li class="ms" data-milestone="4">
+          <div class="ms-head"><span class="ms-id">M4</span><span class="ms-name">Solid to run</span><span class="ms-count" data-count></span></div>
+          <div class="ms-bar" aria-hidden="true"><span class="ms-fill"></span></div>
+          <p class="ms-desc">Auto-restart, log rotation, capacity limits and safe updates.</p>
+        </li>
+      </ol>
+      <p class="roadmap-status" aria-live="polite"><span data-roadmap-text>Live counts need JavaScript.</span> <a href="https://github.com/mixutin/dauntless-revived/blob/dauntless-revived/ROADMAP.md">See the live checklist</a>.</p>
+    </div>
+  </section>
+
+  <section class="section" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <p class="kicker" aria-hidden="true"><span class="hex">0x05</span><span>faq</span></p>
+      <h2 id="faq-title">Frequently asked questions</h2>
+      <div class="faq">
+        <div class="faq-item">
+          <h3>Can you still play Dauntless?</h3>
+          <p>Not on the official servers: Phoenix Labs shut them down on 30 May 2025, and the game needs a server to work. It can run against a replacement server instead. Dauntless Revived is one: it runs the 1.4.4 client (October 2020) for a small group, and anyone who owns that client can host it for their own group.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is there a public Dauntless private server I can join?</h3>
+          <p>Not this one. Dauntless Revived is run privately for a few friends, and there is no public server to join. You can self-host it from the <a href="https://github.com/mixutin/dauntless-revived">repository</a>, or play if a host invites you.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Which version of Dauntless does it run?</h3>
+          <p>The genuine, unmodified Dauntless 1.4.4 client from October 2020, built on Unreal Engine 4. Content released after November 2020 is not in that build. The project also studied the final 2.1.1 client, and those findings are in the <a href="https://mixutin.github.io/dauntless-revived/findings/">docs</a>.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do I need an Epic Games account?</h3>
+          <p>No. Each player has an account on the host's server and logs in with a personal account key. The 1.4.4 client is older than the game's Epic Online Services login.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is it affiliated with Phoenix Labs or Epic Games?</h3>
+          <p>No. It is an unofficial, non-commercial fan project. “Dauntless” is a trademark of its owners. No game files are distributed by this site or the repository, so you need your own copy of the 1.4.4 client.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How is it different from Undaunted?</h3>
+          <p>Dauntless Revived is a fork of Undaunted by gwog (Gregory Morford) and contributors, and the server-mode DLL, deploy server, metagame and launcher are their work. The fork adds hardening (services listen only on the host PC by default, a port clash is a hard error, every request is logged), a friend kit and documentation, and it is working on saving progression (M2).</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I help?</h3>
+          <p>Yes. Questions, ideas and play-test reports go to <a href="https://github.com/mixutin/dauntless-revived/discussions">GitHub Discussions</a>. Please report security problems privately through a <a href="https://github.com/mixutin/dauntless-revived/security/advisories/new">security advisory</a>. The code is AGPL-3.0, so you can also run and change your own copy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="credits" aria-labelledby="credits-title">
+    <div class="wrap">
+      <p class="kicker" aria-hidden="true"><span class="hex">0x06</span><span>credits</span></p>
+      <h2 id="credits-title">Credits</h2>
+      <div class="credits-grid">
+        <div class="card">
+          <h3>Undaunted</h3>
+          <p>Dauntless Revived stands on <a href="https://github.com/SyST3MDeV/Undaunted">Undaunted</a> by gwog (Gregory Morford) and its contributors. The server-mode DLL, the deploy server, the metagame and the launcher are their work. This fork builds on top of it.</p>
+          <p>The code stays under the GNU Affero General Public License v3.0 (AGPL-3.0). If you host a modified version for other people, you must offer them its source code. The full credits are on the docs site's <a href="https://mixutin.github.io/dauntless-revived/legal.html">credits and license</a> page.</p>
+        </div>
+        <div class="card">
+          <h3>Other projects in the space</h3>
+          <ul class="plain">
+            <li><a href="https://github.com/SyST3MDeV/Undaunted">Undaunted</a> (upstream): the open-source server this fork builds on.</li>
+            <li><a href="https://github.com/pranav158/Mystic-Paradox">Mystic Paradox</a>: porting the same approach to Dauntless 1.12.0.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="disclaimer">Dauntless Revived is an unofficial, non-commercial fan project. It is not affiliated with, endorsed by, or supported by Phoenix Labs or Epic Games. “Dauntless” is a trademark of its owners. No game files are distributed by this site or the repository, and this page uses no game art: the diagram and shapes are original.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="sig"><span class="hex" aria-hidden="true">0x1409369a0</span> <a href="/">mixutin</a> · 2026</p>
+    <p>No cookies and no analytics. The roadmap bars read one public file from GitHub; fonts are served by Google Fonts.</p>
+    <ul class="footer-links">
+      <li><a href="/fi/projects/dauntless-revived/" hreflang="fi" lang="fi">Suomeksi</a></li>
+      <li><a href="https://mixutin.github.io/dauntless-revived/">Docs</a></li>
+      <li><a href="https://github.com/mixutin/dauntless-revived">GitHub</a></li>
+      <li><a href="/.well-known/security.txt">security.txt</a></li>
+      <li><a href="/llms.txt">llms.txt</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

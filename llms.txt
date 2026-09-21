@@ -1,0 +1,40 @@
+# mixutin
+
+> mixutin is a cybersecurity specialist and CTF player who works on reverse engineering and game preservation. The main public project is Dauntless Revived, a private-server revival of the co-op monster-hunting game Dauntless, whose official servers shut down on 30 May 2025. It runs the genuine Dauntless 1.4.4 client against a self-hosted backend and is a modified fork of Undaunted by gwog (Gregory Morford) and contributors (AGPL-3.0).
+
+This site is available in English and Finnish. Dauntless Revived is not a public server: it is run for a few friends, and anyone can self-host it from the repository. No game files are distributed by this site or the repository. It is not affiliated with Phoenix Labs or Epic Games; "Dauntless" is a trademark of its owners.
+
+Skills: reverse engineering (game preservation, binary analysis, x86-64 disassembly, Windows PE analysis, Unreal Engine 4 internals), backend and servers (TypeScript, Node.js, Express, SQLite, Python with FastAPI), systems programming (C, C++, OpenBSD), game development and tools (Unity, C#, Luau/Roblox, Blender, MCP servers). Also private, unreleased work: game private servers for Angry Birds Go! and Naruto x Boruto: Ninja Voltage, and MCP servers that let AI coding assistants drive Blender, LibreSprite and Roblox Studio.
+
+## Projects
+
+- [Dauntless Revived: project page](https://mixutin.github.io/projects/dauntless-revived/): what it is, what works today, how it works, live roadmap progress, FAQ and credits
+- [Dauntless Revived docs](https://mixutin.github.io/dauntless-revived/): documentation home with current status and how the pieces fit together
+- [Dauntless Revived FAQ](https://mixutin.github.io/dauntless-revived/faq.html): common questions, such as whether Dauntless can still be played and whether an Epic account is needed
+- [Dauntless Revived setup guide](https://mixutin.github.io/dauntless-revived/setup/): hosting the server, the friends' side, and checking that a copy of the 1.4.4 client is genuine
+- [Dauntless Revived findings](https://mixutin.github.io/dauntless-revived/findings/): research notes on the backend contract, the server-mode DLL and the 2.1.1 client
+- [Dauntless Revived roadmap](https://github.com/mixutin/dauntless-revived/blob/dauntless-revived/ROADMAP.md): the live checklist, milestones M0 to M4
+- [Dauntless Revived source code](https://github.com/mixutin/dauntless-revived): GitHub repository, AGPL-3.0, branch dauntless-revived
+- [Dauntless Revived docs llms.txt](https://mixutin.github.io/dauntless-revived/llms.txt): index of the documentation site
+- [Dauntless Revived docs llms-full.txt](https://mixutin.github.io/dauntless-revived/llms-full.txt): the documentation as one text file
+- [Undaunted](https://github.com/SyST3MDeV/Undaunted): the upstream open-source Dauntless server by gwog (Gregory Morford) and contributors
+
+## About
+
+- [Portfolio home](https://mixutin.github.io/): about mixutin, skills, projects and contact
+- [GitHub profile](https://github.com/mixutin): public repositories
+- [Project discussions](https://github.com/mixutin/dauntless-revived/discussions): questions and ideas about Dauntless Revived
+- [security.txt](https://mixutin.github.io/.well-known/security.txt): how to report a security problem privately
+
+## Suomeksi
+
+- [Etusivu suomeksi](https://mixutin.github.io/fi/): mixutin, osaaminen, projektit ja yhteystiedot
+- [Dauntless Revived suomeksi](https://mixutin.github.io/fi/projects/dauntless-revived/): mikä toimii, miten se toimii, tiekartta ja usein kysyttyä
+- [Dauntless Revived -ohjeet suomeksi](https://mixutin.github.io/dauntless-revived/fi/): ohjesivuston etusivu suomeksi, tilanne ja miten osat liittyvät toisiinsa
+- [Usein kysyttyä](https://mixutin.github.io/dauntless-revived/fi/faq.html): lyhyet vastaukset, esimerkiksi voiko Dauntlessia vielä pelata ja tarvitaanko Epic-tiliä
+- [Asennus](https://mixutin.github.io/dauntless-revived/fi/setup/): oman palvelimen pystytys, kavereiden liittyminen ja ongelmien korjaus
+- [Tiekartta](https://mixutin.github.io/dauntless-revived/fi/roadmap.html): välitavoitteet M0–M4 selkokielellä
+
+## Optional
+
+- [Sitemap](https://mixutin.github.io/sitemap.xml): all pages with English and Finnish alternates

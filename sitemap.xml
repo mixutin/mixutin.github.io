@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://mixutin.github.io/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mixutin.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://mixutin.github.io/fi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mixutin.github.io/"/>
+  </url>
+  <url>
+    <loc>https://mixutin.github.io/fi/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mixutin.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://mixutin.github.io/fi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mixutin.github.io/"/>
+  </url>
+  <url>
+    <loc>https://mixutin.github.io/projects/dauntless-revived/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mixutin.github.io/projects/dauntless-revived/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://mixutin.github.io/fi/projects/dauntless-revived/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mixutin.github.io/projects/dauntless-revived/"/>
+  </url>
+  <url>
+    <loc>https://mixutin.github.io/fi/projects/dauntless-revived/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mixutin.github.io/projects/dauntless-revived/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://mixutin.github.io/fi/projects/dauntless-revived/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mixutin.github.io/projects/dauntless-revived/"/>
+  </url>
+</urlset>

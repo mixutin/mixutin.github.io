@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Open Graph card for https://mixutin.github.io/fi/projects/dauntless-revived/
+       Original artwork: text and abstract shapes only, no game art or logos.
+       Render: rsvg-convert -w 1200 -h 630 -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#f3e7da" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="ember" cx="0.05" cy="1" r="0.8">
+      <stop offset="0" stop-color="#ff7a3c" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#ff7a3c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aether" cx="0.82" cy="0.35" r="0.5">
+      <stop offset="0" stop-color="#45d6c3" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#45d6c3" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shardA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7ff0e0"/>
+      <stop offset="1" stop-color="#1f8f82"/>
+    </linearGradient>
+    <linearGradient id="shardB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#45d6c3"/>
+      <stop offset="1" stop-color="#0f5f57"/>
+    </linearGradient>
+    <linearGradient id="shardC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffb07a"/>
+      <stop offset="1" stop-color="#e2521b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0d0b0a"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#ember)"/>
+  <rect width="1200" height="630" fill="url(#aether)"/>
+
+  <path d="M40 84V40H84M1116 40H1160V84M1160 546V590H1116M84 590H40V546" fill="none" stroke="#ff7a3c" stroke-width="3"/>
+
+  <g>
+    <polygon points="960,86 812,248 872,520 944,318" fill="url(#shardA)" fill-opacity="0.85"/>
+    <polygon points="960,86 944,318 1036,520 1100,248" fill="url(#shardB)" fill-opacity="0.8"/>
+    <polygon points="944,318 872,520 1036,520" fill="url(#shardC)" fill-opacity="0.9"/>
+    <polygon points="960,86 1100,248 1036,520 872,520 812,248" fill="none" stroke="#9af5ea" stroke-opacity="0.7" stroke-width="2"/>
+    <line x1="960" y1="86" x2="944" y2="318" stroke="#e8fffb" stroke-opacity="0.35" stroke-width="1.5"/>
+    <line x1="944" y1="318" x2="872" y2="520" stroke="#e8fffb" stroke-opacity="0.35" stroke-width="1.5"/>
+    <line x1="944" y1="318" x2="1036" y2="520" stroke="#e8fffb" stroke-opacity="0.35" stroke-width="1.5"/>
+    <polygon points="1118,118 1142,160 1106,172" fill="#45d6c3" fill-opacity="0.7"/>
+    <polygon points="786,412 806,448 772,452" fill="#ff7a3c" fill-opacity="0.8"/>
+    <polygon points="1120,430 1134,454 1110,458" fill="#45d6c3" fill-opacity="0.5"/>
+  </g>
+
+  <text x="82" y="124" font-family="JetBrains Mono" font-size="24" fill="#9d9284">mixutin / projektit / <tspan fill="#ff8f5c">dauntless-revived</tspan></text>
+  <text x="76" y="252" font-family="Inter" font-weight="700" font-size="120" letter-spacing="-4" fill="#f3e7da">Dauntless</text>
+  <text x="76" y="372" font-family="Inter" font-weight="700" font-size="120" letter-spacing="-4" fill="#ff8f5c">Revived</text>
+
+  <text x="82" y="446" font-family="Inter" font-weight="500" font-size="32" fill="#d9cdbf">Dauntless-pelin paluu omalla palvelimella.</text>
+  <text x="82" y="490" font-family="Inter" font-weight="500" font-size="32" fill="#d9cdbf">Aito peliversio 1.4.4.</text>
+
+  <text x="82" y="556" font-family="JetBrains Mono" font-size="22" fill="#5fd6c6">Pohjana Undaunted (gwog ja muut tekijät) · AGPL-3.0</text>
+</svg>

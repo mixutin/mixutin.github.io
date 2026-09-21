@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 64 64">
+  <!-- Full-bleed version of favicon.svg for apple-touch-icon.png (the OS rounds the corners). -->
+  <rect width="64" height="64" fill="#0b0c0d"/>
+  <path d="M15 45V26M15 31.5c0-4.6 3.1-8.3 7.3-8.3s7.3 3.7 7.3 8.3V45M29.6 31.5c0-4.6 3.1-8.3 7.3-8.3s7.3 3.7 7.3 8.3V45" fill="none" stroke="#ece6d8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="47.5" y="40.5" width="8" height="4.5" rx="1" fill="#f5a524"/>
+</svg>

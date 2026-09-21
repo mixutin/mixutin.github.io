@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://raw.githubusercontent.com; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>mixutin · reverse engineering, CTFs and game preservation</title>
+<meta name="description" content="mixutin: cybersecurity specialist and CTF player who reverse-engineers games to keep them playable. Featured: Dauntless Revived, a Dauntless private server.">
+<meta name="author" content="mixutin">
+<link rel="canonical" href="https://mixutin.github.io/">
+<link rel="alternate" hreflang="en" href="https://mixutin.github.io/">
+<link rel="alternate" hreflang="fi" href="https://mixutin.github.io/fi/">
+<link rel="alternate" hreflang="x-default" href="https://mixutin.github.io/">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0b0c0d" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f6f2e9" media="(prefers-color-scheme: light)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&amp;family=JetBrains+Mono:wght@400..700&amp;display=swap">
+<link rel="stylesheet" href="/assets/css/site.css">
+<meta property="og:type" content="profile">
+<meta property="profile:username" content="mixutin">
+<meta property="og:site_name" content="mixutin">
+<meta property="og:title" content="mixutin · reverse engineering, CTFs and game preservation">
+<meta property="og:description" content="Cybersecurity specialist and CTF player who takes software apart to keep games playable after their servers shut down. Featured project: Dauntless Revived.">
+<meta property="og:url" content="https://mixutin.github.io/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="fi_FI">
+<meta property="og:image" content="https://mixutin.github.io/assets/og/og-home.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The handle mixutin in large monospace letters with an amber cursor, above the words: cybersecurity, CTFs, reverse engineering, game preservation.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="mixutin · reverse engineering, CTFs and game preservation">
+<meta name="twitter:description" content="Cybersecurity specialist and CTF player who takes software apart to keep games playable after their servers shut down.">
+<meta name="twitter:image" content="https://mixutin.github.io/assets/og/og-home.png">
+<meta name="twitter:image:alt" content="The handle mixutin in large monospace letters with an amber cursor, above the words: cybersecurity, CTFs, reverse engineering, game preservation.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mixutin.github.io/#website",
+      "url": "https://mixutin.github.io/",
+      "name": "mixutin",
+      "description": "Portfolio of mixutin: cybersecurity, CTFs, reverse engineering and game preservation.",
+      "inLanguage": ["en", "fi"],
+      "publisher": { "@id": "https://mixutin.github.io/#person" }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://mixutin.github.io/#profilepage",
+      "url": "https://mixutin.github.io/",
+      "name": "mixutin · reverse engineering, CTFs and game preservation",
+      "inLanguage": "en",
+      "dateModified": "2026-09-21",
+      "isPartOf": { "@id": "https://mixutin.github.io/#website" },
+      "mainEntity": {
+        "@type": "Person",
+        "@id": "https://mixutin.github.io/#person",
+        "name": "mixutin",
+        "alternateName": "@mixutin",
+        "url": "https://mixutin.github.io/",
+        "description": "Cybersecurity specialist and CTF player who works on reverse engineering and game preservation.",
+        "jobTitle": "Cybersecurity specialist",
+        "sameAs": ["https://github.com/mixutin"],
+        "knowsAbout": [
+          "Cybersecurity",
+          "Capture the flag (CTF) competitions",
+          "Reverse engineering",
+          "Game preservation",
+          "Binary analysis",
+          "x86-64 disassembly",
+          "Windows PE analysis",
+          "Unreal Engine 4 internals",
+          "Backend development",
+          "Game private servers",
+          "Systems programming",
+          "Game development",
+          "TypeScript",
+          "JavaScript",
+          "Node.js",
+          "Express",
+          "SQLite",
+          "Python",
+          "FastAPI",
+          "C",
+          "C++",
+          "C#",
+          "Unity",
+          "Luau",
+          "Roblox",
+          "Java",
+          "Swift",
+          "PowerShell",
+          "GitHub Actions",
+          "OpenBSD",
+          "Blender",
+          "Model Context Protocol"
+        ]
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/" aria-label="mixutin, home">
+      <img src="/favicon.svg" alt="" width="28" height="28">
+      <span>mixutin</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="lang" aria-label="Language">
+      <a href="/" hreflang="en" lang="en" aria-current="page" aria-label="English">EN</a>
+      <a href="/fi/" hreflang="fi" lang="fi" aria-label="Suomeksi">FI</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="wrap hero" aria-labelledby="hero-title">
+    <div>
+      <p class="prompt"><span class="sigil" aria-hidden="true">$</span> whoami</p>
+      <h1 class="handle" id="hero-title">mixutin<span class="cursor" aria-hidden="true"></span></h1>
+      <p class="lede">Cybersecurity specialist and CTF player. I take software apart to see how it works, and use that to keep games playable after their official servers shut down.</p>
+      <ul class="chips" aria-label="Focus areas">
+        <li>cybersecurity</li>
+        <li>CTF player</li>
+        <li>reverse engineering</li>
+        <li>game preservation</li>
+      </ul>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="#projects">Featured project <span class="arrow" aria-hidden="true">↓</span></a>
+        <a class="btn" href="https://github.com/mixutin">GitHub profile</a>
+      </div>
+    </div>
+    <figure class="notes">
+      <figcaption>; field notes: how a revival starts</figcaption>
+      <ol>
+        <li><span class="off" aria-hidden="true">0x00</span><span class="ln">read the binary</span></li>
+        <li><span class="off" aria-hidden="true">0x08</span><span class="ln">map every call it makes home</span></li>
+        <li><span class="off" aria-hidden="true">0x10</span><span class="ln">answer those calls yourself</span></li>
+        <li><span class="off" aria-hidden="true">0x18</span><span class="ln">keep the game alive</span></li>
+      </ol>
+    </figure>
+  </section>
+
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="wrap about-grid">
+      <div>
+        <p class="kicker" aria-hidden="true"><span class="hex">0x10</span><span>about</span></p>
+        <h2 id="about-title">About</h2>
+      </div>
+      <div class="about-body">
+        <p>I'm mixutin. I'm a cybersecurity specialist, and I love playing capture-the-flag (CTF) competitions. My favourite part of any problem is taking a program apart to find out how it really works.</p>
+        <p>Lately that has meant game preservation. When a game's official servers shut down, the game often stops working for everyone, even for people who still have it installed. I study the game client, work out what it expects from its servers, and write or fix server code so it can be played again.</p>
+        <p>Around that I build backends, systems-level tools and game-development tools, including MCP servers that let AI coding assistants work inside creative apps.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills" aria-labelledby="skills-title">
+    <div class="wrap">
+      <p class="kicker" aria-hidden="true"><span class="hex">0x20</span><span>skills</span></p>
+      <h2 id="skills-title">Skills</h2>
+      <p class="section-intro">Four areas I work in, plus the security work that ties them together. The tags are languages and tools I have actually used in my repositories.</p>
+      <div class="skills-grid">
+        <article class="card skill">
+          <p class="num" aria-hidden="true">00</p>
+          <h3>Cybersecurity &amp; CTFs</h3>
+          <p>Security is my field, and CTF competitions keep me sharp: hands-on puzzles where you find the weak spot and capture the hidden flag.</p>
+          <ul class="chips" aria-label="Tools">
+            <li>CTFs</li><li>OpenBSD</li><li>Python</li><li>PowerShell</li>
+          </ul>
+        </article>
+        <article class="card skill">
+          <p class="num" aria-hidden="true">01</p>
+          <h3>Reverse engineering</h3>
+          <p>Game preservation and binary analysis. I read a program's machine code to learn how it talks to the outside world, then write down what I find so others can build on it.</p>
+          <ul class="chips" aria-label="Tools">
+            <li>x86-64 disassembly</li><li>Windows PE analysis</li><li>Unreal Engine 4 internals</li><li>Python: pefile, capstone</li>
+          </ul>
+        </article>
+        <article class="card skill">
+          <p class="num" aria-hidden="true">02</p>
+          <h3>Backend &amp; servers</h3>
+          <p>Replacement servers for games whose own servers are gone, and backends in general: accounts, saves and matchmaking, plus the unglamorous parts like backups and logging.</p>
+          <ul class="chips" aria-label="Tools">
+            <li>TypeScript</li><li>Node.js</li><li>Express</li><li>SQLite</li><li>Python: FastAPI</li><li>PowerShell</li>
+          </ul>
+        </article>
+        <article class="card skill">
+          <p class="num" aria-hidden="true">03</p>
+          <h3>Systems programming</h3>
+          <p>Low-level code close to the operating system, in C and C++: native tools, process internals, and code that has to be careful with memory.</p>
+          <ul class="chips" aria-label="Tools">
+            <li>C</li><li>C++</li><li>x86-64</li><li>OpenBSD</li><li>Git</li><li>GitHub Actions</li>
+          </ul>
+        </article>
+        <article class="card skill">
+          <p class="num" aria-hidden="true">04</p>
+          <h3>Game dev &amp; tools</h3>
+          <p>Games and the tools around them: Unity, Roblox, 3D work in Blender, and MCP (Model Context Protocol) servers that connect AI coding assistants to creative apps.</p>
+          <ul class="chips" aria-label="Tools">
+            <li>Unity</li><li>C#</li><li>Luau / Roblox</li><li>Blender</li><li>MCP servers</li>
+          </ul>
+        </article>
+      </div>
+      <p class="also">Also used: JavaScript, Java, Swift.</p>
+    </div>
+  </section>
+
+  <section class="section" id="projects" aria-labelledby="projects-title">
+    <div class="wrap">
+      <p class="kicker" aria-hidden="true"><span class="hex">0x30</span><span>projects</span></p>
+      <h2 id="projects-title">Projects</h2>
+
+      <article class="featured" aria-labelledby="dr-title">
+        <div>
+          <p class="badge">featured project</p>
+          <h3 id="dr-title">Dauntless Revived</h3>
+          <p class="summary">A private-server revival of Dauntless, Phoenix Labs' free-to-play co-op monster-hunting game. Its official servers shut down on 30 May 2025. This project runs the genuine Dauntless 1.4.4 client (October 2020, Unreal Engine 4) against a self-hosted backend.</p>
+          <p class="credit">A modified fork of <a href="https://github.com/SyST3MDeV/Undaunted">Undaunted</a> by gwog (Gregory Morford) and contributors, licensed AGPL-3.0. Undaunted did the groundwork. This fork adds hardening, a friend kit and documentation, and it is working on saving progression (M2).</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="/projects/dauntless-revived/">Project page <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn" href="https://mixutin.github.io/dauntless-revived/">Docs</a>
+            <a class="btn" href="https://github.com/mixutin/dauntless-revived">GitHub</a>
+          </div>
+          <p class="note">Not a public server: it is run for a few friends, and anyone can self-host it from the repository. No game files are distributed by this site or the repository.</p>
+        </div>
+        <div class="statusbox">
+          <h4>works today · solo, on the host PC</h4>
+          <ul class="checks">
+            <li>Log in with a personal account key, no Epic account</li>
+            <li>Tutorial, Ramsgate (the hub city) and the Training Dojo</li>
+            <li>Real hunts (a Lesser Boreus, a pursuit) and crafting</li>
+            <li>Inventory, gear and quests saved across restarts</li>
+            <li>Hourly backups</li>
+          </ul>
+          <h4>not yet</h4>
+          <ul class="checks open">
+            <li>Friends over the internet (planned via Tailscale)</li>
+            <li>Parties and the friends list</li>
+            <li>Real progression and the Hunt Pass <span class="tag">M2</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <div class="subhead">
+        <h3>In private development</h3>
+        <p>Not public yet, so no links. Listed so you know what else I'm working on.</p>
+      </div>
+      <div class="private-groups">
+        <div class="private-group">
+          <h4 class="group-title">Game private servers</h4>
+          <div class="private-grid">
+            <article class="card private-card">
+              <p class="badge">private</p>
+              <h5>Angry Birds Go! private server</h5>
+              <p>Server code only. You bring your own game data.</p>
+            </article>
+            <article class="card private-card">
+              <p class="badge">private</p>
+              <h5>Naruto x Boruto: Ninja Voltage private server</h5>
+              <p>For the game discontinued on 9 December 2024. Server code only; bring your own game data.</p>
+            </article>
+          </div>
+        </div>
+        <div class="private-group">
+          <h4 class="group-title">MCP tools</h4>
+          <div class="private-grid">
+            <article class="card private-card">
+              <p class="badge">private</p>
+              <h5>MCP server for Blender</h5>
+              <p>Lets AI coding assistants do 3D modelling in Blender.</p>
+            </article>
+            <article class="card private-card">
+              <p class="badge">private</p>
+              <h5>MCP server for LibreSprite</h5>
+              <p>Lets AI coding assistants draw pixel art in LibreSprite.</p>
+            </article>
+            <article class="card private-card">
+              <p class="badge">private</p>
+              <h5>MCP server for Roblox Studio</h5>
+              <p>Lets AI coding assistants work in Roblox Studio, through a companion plugin.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <p class="kicker" aria-hidden="true"><span class="hex">0x40</span><span>contact</span></p>
+      <h2 id="contact-title">Contact / find me</h2>
+      <p class="section-intro">The best way to reach me is through GitHub.</p>
+      <ul class="contact-list">
+        <li>
+          <span class="k">github</span>
+          <div class="v">
+            <a href="https://github.com/mixutin">github.com/mixutin</a>
+            <p>Profile and public repositories.</p>
+          </div>
+        </li>
+        <li>
+          <span class="k">dauntless revived</span>
+          <div class="v">
+            <a href="https://github.com/mixutin/dauntless-revived/discussions">GitHub Discussions</a>
+            <p>Questions, ideas and play-test reports about the project.</p>
+          </div>
+        </li>
+        <li>
+          <span class="k">security reports</span>
+          <div class="v">
+            <a href="https://github.com/mixutin/dauntless-revived/security/advisories/new">Report a vulnerability privately</a>
+            <p>Please don't open a public issue for a security problem. The same details are in <a href="/.well-known/security.txt">security.txt</a>.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="sig"><span class="hex" aria-hidden="true">0x1409369a0</span> mixutin · 2026</p>
+    <p>No cookies and no analytics. Fonts are served by Google Fonts.</p>
+    <p>Dauntless is a trademark of its owners. Dauntless Revived is an unofficial fan project and is not affiliated with Phoenix Labs or Epic Games.</p>
+    <ul class="footer-links">
+      <li><a href="/fi/" hreflang="fi" lang="fi">Suomeksi</a></li>
+      <li><a href="/.well-known/security.txt">security.txt</a></li>
+      <li><a href="/llms.txt">llms.txt</a></li>
+      <li><a href="/sitemap.xml">sitemap.xml</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

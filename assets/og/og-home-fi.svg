@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Open Graph card for https://mixutin.github.io/fi/ (render: rsvg-convert -w 1200 -h 630) -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ece6d8" stroke-opacity="0.055" stroke-width="1"/>
+    </pattern>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#ffffff" fill-opacity="0.02"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.92" cy="0.05" r="0.75">
+      <stop offset="0" stop-color="#f5a524" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#f5a524" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b0c0d" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0b0c0d" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0b0c0d"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#fade)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect width="1200" height="630" fill="url(#scan)"/>
+
+  <path d="M40 84V40H84M1116 40H1160V84M1160 546V590H1116M84 590H40V546" fill="none" stroke="#f5a524" stroke-width="3"/>
+
+  <text x="96" y="168" font-family="JetBrains Mono" font-size="30" fill="#928b7e"><tspan fill="#f5a524">$</tspan> whoami</text>
+  <text x="88" y="330" font-family="JetBrains Mono" font-weight="700" font-size="170" letter-spacing="-6" fill="#ece6d8">mixutin</text>
+  <rect x="768" y="310" width="82" height="22" fill="#f5a524"/>
+
+  <text x="96" y="412" font-family="Inter" font-weight="500" font-size="40" fill="#cfc8b9">Tietoturva · CTF-kilpailut · Takaisinmallinnus</text>
+  <text x="96" y="464" font-family="Inter" font-weight="500" font-size="40" fill="#cfc8b9">Vanhojen pelien pelastaminen</text>
+
+  <text x="96" y="552" font-family="JetBrains Mono" font-size="26" fill="#86cdd4">mixutin.github.io/fi</text>
+  <text x="1104" y="552" font-family="JetBrains Mono" font-size="22" fill="#6f695e" text-anchor="end">0x1409369a0</text>
+</svg>
