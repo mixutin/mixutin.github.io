@@ -38,3 +38,8 @@ Skills: reverse engineering (game preservation, binary analysis, x86-64 disassem
 ## Optional
 
 - [Sitemap](https://mixutin.github.io/sitemap.xml): all pages with English and Finnish alternates
+
+## CTFs and writeups
+
+- [Back in CTFs](https://mixutin.github.io/blog/back-in-ctfs/): crypto and rev
+- [CTF writeups](https://mixutin.github.io/writeups/): future challenge solutions
