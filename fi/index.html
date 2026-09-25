@@ -58,7 +58,7 @@
       "url": "https://mixutin.github.io/fi/",
       "name": "mixutin – tietoturvaa, CTF-kilpailuja ja pelien pelastamista",
       "inLanguage": "fi",
-      "dateModified": "2026-09-21",
+      "dateModified": "2026-09-25",
       "isPartOf": { "@id": "https://mixutin.github.io/#website" },
       "mainEntity": {
         "@type": "Person",
@@ -68,7 +68,7 @@
         "url": "https://mixutin.github.io/",
         "description": "Tietoturva-asiantuntija ja CTF-pelaaja, joka tekee takaisinmallinnusta ja pelastaa vanhoja pelejä.",
         "jobTitle": "Tietoturva-asiantuntija",
-        "sameAs": ["https://github.com/mixutin"],
+        "sameAs": ["https://github.com/mixutin", "https://cryptohack.org/user/nurminen/"],
         "knowsAbout": [
           "Tietoturva",
           "CTF-kilpailut",
@@ -122,6 +122,7 @@
       <ul>
         <li><a href="#minusta">Minusta</a></li>
         <li><a href="#osaaminen">Osaaminen</a></li>
+        <li><a href="#ctf">CTF &amp; ratkaisut</a></li>
         <li><a href="#projektit">Projektit</a></li>
         <li><a href="#yhteystiedot">Yhteystiedot</a></li>
       </ul>
@@ -138,12 +139,12 @@
     <div>
       <p class="prompt"><span class="sigil" aria-hidden="true">$</span> whoami</p>
       <h1 class="handle" id="hero-title">mixutin<span class="cursor" aria-hidden="true"></span></h1>
-      <p class="lede">Tietoturva-asiantuntija ja CTF-pelaaja (CTF on tietoturvan pulmakilpailu). Selvitän, miten ohjelmat toimivat sisältä päin. Sen avulla pidän pelejä pelattavina senkin jälkeen, kun niiden viralliset palvelimet (tietokoneet, joilla peliä pyöritetään verkossa) on suljettu.</p>
+      <p class="lede">Tietoturva-asiantuntija, taas mukana CTF-kilpailuissa. Pääalueeni ovat kryptografia ja takaisinmallinnus. Haluan säilyttää katoamisvaarassa olevia pelejä ja muuta mediaa, joista ei vielä ole kopiota Internet Archivessa.</p>
       <ul class="chips" aria-label="Painopisteet">
         <li>tietoturva</li>
-        <li>CTF-kilpailut</li>
+        <li>CTF: krypto &amp; rev</li>
         <li>takaisinmallinnus</li>
-        <li>pelien pelastaminen</li>
+        <li>median säilyttäminen</li>
       </ul>
       <div class="btn-row">
         <a class="btn btn-primary" href="#projektit">Katso pääprojekti <span class="arrow" aria-hidden="true">↓</span></a>
@@ -170,6 +171,7 @@
       <div class="about-body">
         <p>Hei, olen mixutin! Olen tietoturva-asiantuntija ja rakastan CTF-kilpailuja. Nimi tulee sanoista capture the flag, eli ”valloita lippu”. Kilpailussa ratkotaan pulmia ja etsitään ohjelmiin piilotettuja vastauksia. Mieluiten puran ohjelman osiin ja katson, miten se oikeasti toimii.</p>
         <p>Viime aikoina olen pelastanut vanhoja pelejä. Kun pelin viralliset palvelimet suljetaan, peli lakkaa usein toimimasta kaikilta. Se ei toimi edes niillä, joilla se on yhä koneella. Silloin tutkin pelin ohjelmaa ja selvitän, mitä se odottaa palvelimelta. Sitten kirjoitan tai korjaan palvelinohjelman, jotta peliä voi taas pelata.</p>
+        <p>Haluan säilyttää myös muuta mediaa, jota ei vielä löydy Internet Archivesta. Opiskelen parhaillaan tietoturva-alan sertifikaatteja varten.</p>
         <p>Sen lisäksi teen taustajärjestelmiä (palvelimella toimivia osia, joita käyttäjä ei näe) sekä työkaluja ohjelmoijille ja pelintekijöille. Niihin kuuluu myös MCP-palvelimia: pieniä apuohjelmia, joiden avulla tekoälyä käyttävät ohjelmointiavustajat voivat työskennellä luovissa ohjelmissa, kuten 3D-mallinnusohjelmassa.</p>
       </div>
     </div>
@@ -223,6 +225,29 @@
         </article>
       </div>
       <p class="also">Lisäksi käytössä: JavaScript, Java, Swift.</p>
+    </div>
+  </section>
+
+  <section class="section" id="ctf" aria-labelledby="ctf-title">
+    <div class="wrap">
+      <p class="kicker" aria-hidden="true"><span class="hex">0x28</span><span>ctf / muistiinpanot</span></p>
+      <h2 id="ctf-title">Takaisin CTF-kilpailuihin</h2>
+      <div class="ctf-grid">
+        <div>
+          <p class="section-intro">Kilpailen <a href="https://ctftime.org/team/387399">THEM?!</a>-joukkueessa. Pääalueeni ovat kryptografia ja takaisinmallinnus.</p>
+          <p>Olen <a href="https://cryptohack.org/user/nurminen/">CryptoHackissa</a> <strong>maailmanlistan #1 ja Suomen #1</strong>. Olen suorittanut kaikki oppimispolut ja ratkaisen nyt CTF Archiven tehtäviä. Sijoitus voi muuttua; ajantasainen tilanne näkyy profiilissani.</p>
+          <p>Opiskelen parhaillaan myös tietoturva-alan sertifikaatteja varten.</p>
+        </div>
+        <a class="team-mark" href="https://ctftime.org/team/387399" aria-label="THEM?! CTFtimessa"><img src="/assets/img/them-transparent.png" alt="THEM?!-joukkueen logo" width="320" height="320"></a>
+      </div>
+      <div class="subhead"><h3>Uusin kirjoitus</h3></div>
+      <article class="card post-card">
+        <p class="badge">25.9.2026 · CTF-kuulumiset</p>
+        <h3><a href="/fi/blog/back-in-ctfs/">Takaisin CTF-kilpailuihin: krypto, rev ja THEM?!</a></h3>
+        <p>Miksi palasin kilpailuihin, mihin keskityn ja mistä tulevat tehtäväratkaisuni löytyvät.</p>
+      </article>
+      <div class="subhead"><h3>CTF-ratkaisut</h3></div>
+      <p class="section-intro">Tehtäväratkaisuja ei ole vielä julkaistu. <a href="/fi/writeups/">Ratkaisusivu</a> on valmiina tulevia krypto- ja rev-kirjoituksia varten.</p>
     </div>
   </section>
 
@@ -303,6 +328,24 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section" id="tyoasema" aria-labelledby="workstation-title">
+    <div class="wrap">
+      <p class="kicker" aria-hidden="true"><span class="hex">0x38</span><span>työasema</span></p>
+      <h2 id="workstation-title">Työympäristöni</h2>
+      <p class="section-intro">Pääkäyttöjärjestelmäni on Windows 11 Home. Käytän Ubuntu 26.04 LTS:ää WSL 2:ssa vaativampaan komentorivi-, tietoturva- ja kehitystyöhön.</p>
+      <ul class="setup-list"><li>AMD Ryzen 7 3700X · 8 ydintä / 16 säiettä</li><li>32 Gt muistia · AMD Radeon RX 6600</li><li>Ubuntu WSL 2 · GCC, Python, Git ja Docker-työkalut</li></ul>
+    </div>
+  </section>
+
+  <section class="section" id="ai-security" aria-labelledby="ai-title">
+    <div class="wrap">
+      <p class="kicker" aria-hidden="true"><span class="hex">0x3c</span><span>tekoälyn tietoturva</span></p>
+      <h2 id="ai-title">Kehitän tekoälyn tietoturvaominaisuuksia</h2>
+      <p class="section-intro">Teen työtä tekoälyalustojen kanssa niiden tietoturvaominaisuuksien edistämiseksi. Olen OpenAI:ssa varmennettu tietoturva-ammattilainen ja varmennettu myös Claudessa.</p>
+      <div class="ai-logos"><div class="ai-logo openai-logo"><img src="/assets/img/openai-transparent.png" alt="OpenAI" width="320" height="180"></div><div class="ai-logo claude-logo"><img src="/assets/img/claude-transparent.png" alt="Claude" width="240" height="240"></div></div>
     </div>
   </section>
 

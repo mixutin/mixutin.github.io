@@ -58,7 +58,7 @@
       "url": "https://mixutin.github.io/",
       "name": "mixutin · reverse engineering, CTFs and game preservation",
       "inLanguage": "en",
-      "dateModified": "2026-09-21",
+      "dateModified": "2026-09-25",
       "isPartOf": { "@id": "https://mixutin.github.io/#website" },
       "mainEntity": {
         "@type": "Person",
@@ -68,7 +68,7 @@
         "url": "https://mixutin.github.io/",
         "description": "Cybersecurity specialist and CTF player who works on reverse engineering and game preservation.",
         "jobTitle": "Cybersecurity specialist",
-        "sameAs": ["https://github.com/mixutin"],
+        "sameAs": ["https://github.com/mixutin", "https://cryptohack.org/user/nurminen/"],
         "knowsAbout": [
           "Cybersecurity",
           "Capture the flag (CTF) competitions",
@@ -122,6 +122,7 @@
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#ctf">CTF &amp; writeups</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -138,12 +139,12 @@
     <div>
       <p class="prompt"><span class="sigil" aria-hidden="true">$</span> whoami</p>
       <h1 class="handle" id="hero-title">mixutin<span class="cursor" aria-hidden="true"></span></h1>
-      <p class="lede">Cybersecurity specialist and CTF player. I take software apart to see how it works, and use that to keep games playable after their official servers shut down.</p>
+      <p class="lede">Cybersecurity specialist, back in CTFs with a focus on cryptography and reverse engineering. I also preserve games and media at risk of disappearing, especially when no copy is on the Internet Archive.</p>
       <ul class="chips" aria-label="Focus areas">
         <li>cybersecurity</li>
-        <li>CTF player</li>
+        <li>CTF crypto &amp; rev</li>
         <li>reverse engineering</li>
-        <li>game preservation</li>
+        <li>media preservation</li>
       </ul>
       <div class="btn-row">
         <a class="btn btn-primary" href="#projects">Featured project <span class="arrow" aria-hidden="true">↓</span></a>
@@ -170,6 +171,7 @@
       <div class="about-body">
         <p>I'm mixutin. I'm a cybersecurity specialist, and I love playing capture-the-flag (CTF) competitions. My favourite part of any problem is taking a program apart to find out how it really works.</p>
         <p>Lately that has meant game preservation. When a game's official servers shut down, the game often stops working for everyone, even for people who still have it installed. I study the game client, work out what it expects from its servers, and write or fix server code so it can be played again.</p>
+        <p>I want to preserve more than games: overlooked media that has no posts or copies on the Internet Archive matters to me too. I am also working toward cybersecurity certifications.</p>
         <p>Around that I build backends, systems-level tools and game-development tools, including MCP servers that let AI coding assistants work inside creative apps.</p>
       </div>
     </div>
@@ -223,6 +225,29 @@
         </article>
       </div>
       <p class="also">Also used: JavaScript, Java, Swift.</p>
+    </div>
+  </section>
+
+  <section class="section" id="ctf" aria-labelledby="ctf-title">
+    <div class="wrap">
+      <p class="kicker" aria-hidden="true"><span class="hex">0x28</span><span>ctf / field notes</span></p>
+      <h2 id="ctf-title">Back in CTFs</h2>
+      <div class="ctf-grid">
+        <div>
+          <p class="section-intro">I am competing with <a href="https://ctftime.org/team/387399">THEM?!</a>. My main challenge categories are cryptography and reverse engineering.</p>
+          <p>On <a href="https://cryptohack.org/user/nurminen/">CryptoHack</a>, I am ranked <strong>#1 globally and #1 in Finland</strong>. I have completed all tracks and am working through the CTF Archive. Rankings can change; see my profile for the current position.</p>
+          <p>I am also studying for cybersecurity certifications.</p>
+        </div>
+        <a class="team-mark" href="https://ctftime.org/team/387399" aria-label="THEM?! team on CTFtime"><img src="/assets/img/them-transparent.png" alt="THEM?! team logo" width="320" height="320"></a>
+      </div>
+      <div class="subhead"><h3>Latest post</h3></div>
+      <article class="card post-card">
+        <p class="badge">25 September 2026 · CTF update</p>
+        <h3><a href="/blog/back-in-ctfs/">Back in CTFs: crypto, rev and THEM?!</a></h3>
+        <p>Why I am returning to CTF competition, what I am focusing on, and where future challenge writeups will live.</p>
+      </article>
+      <div class="subhead"><h3>CTF writeups</h3></div>
+      <p class="section-intro">No challenge writeups published yet. The <a href="/writeups/">writeups section</a> is ready for future crypto and rev solutions.</p>
     </div>
   </section>
 
@@ -303,6 +328,24 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section" id="workstation" aria-labelledby="workstation-title">
+    <div class="wrap">
+      <p class="kicker" aria-hidden="true"><span class="hex">0x38</span><span>workstation</span></p>
+      <h2 id="workstation-title">My setup</h2>
+      <p class="section-intro">Windows 11 Home is my main OS. I use Ubuntu 26.04 LTS in WSL 2 for more complex command-line, security and development work.</p>
+      <ul class="setup-list"><li>AMD Ryzen 7 3700X · 8 cores / 16 threads</li><li>32 GB RAM · AMD Radeon RX 6600</li><li>Ubuntu WSL 2 · GCC, Python, Git and Docker tooling</li></ul>
+    </div>
+  </section>
+
+  <section class="section" id="ai-security" aria-labelledby="ai-title">
+    <div class="wrap">
+      <p class="kicker" aria-hidden="true"><span class="hex">0x3c</span><span>ai security</span></p>
+      <h2 id="ai-title">Advancing cybersecurity in AI</h2>
+      <p class="section-intro">I work with AI platforms to advance their cybersecurity capabilities. I am verified with OpenAI as a cybersecurity professional and with Claude.</p>
+      <div class="ai-logos"><div class="ai-logo openai-logo"><img src="/assets/img/openai-transparent.png" alt="OpenAI" width="320" height="180"></div><div class="ai-logo claude-logo"><img src="/assets/img/claude-transparent.png" alt="Claude" width="240" height="240"></div></div>
     </div>
   </section>
 

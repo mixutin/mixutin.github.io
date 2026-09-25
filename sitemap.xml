@@ -3,14 +3,14 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://mixutin.github.io/</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mixutin.github.io/"/>
     <xhtml:link rel="alternate" hreflang="fi" href="https://mixutin.github.io/fi/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mixutin.github.io/"/>
   </url>
   <url>
     <loc>https://mixutin.github.io/fi/</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mixutin.github.io/"/>
     <xhtml:link rel="alternate" hreflang="fi" href="https://mixutin.github.io/fi/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mixutin.github.io/"/>
@@ -29,4 +29,8 @@
     <xhtml:link rel="alternate" hreflang="fi" href="https://mixutin.github.io/fi/projects/dauntless-revived/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mixutin.github.io/projects/dauntless-revived/"/>
   </url>
+  <url><loc>https://mixutin.github.io/blog/back-in-ctfs/</loc><lastmod>2026-09-25</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://mixutin.github.io/blog/back-in-ctfs/"/><xhtml:link rel="alternate" hreflang="fi" href="https://mixutin.github.io/fi/blog/back-in-ctfs/"/></url>
+  <url><loc>https://mixutin.github.io/fi/blog/back-in-ctfs/</loc><lastmod>2026-09-25</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://mixutin.github.io/blog/back-in-ctfs/"/><xhtml:link rel="alternate" hreflang="fi" href="https://mixutin.github.io/fi/blog/back-in-ctfs/"/></url>
+  <url><loc>https://mixutin.github.io/writeups/</loc><lastmod>2026-09-25</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://mixutin.github.io/writeups/"/><xhtml:link rel="alternate" hreflang="fi" href="https://mixutin.github.io/fi/writeups/"/></url>
+  <url><loc>https://mixutin.github.io/fi/writeups/</loc><lastmod>2026-09-25</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://mixutin.github.io/writeups/"/><xhtml:link rel="alternate" hreflang="fi" href="https://mixutin.github.io/fi/writeups/"/></url>
 </urlset>

@@ -38,3 +38,10 @@ Skills: reverse engineering (game preservation, binary analysis, x86-64 disassem
 ## Optional
 
 - [Sitemap](https://mixutin.github.io/sitemap.xml): all pages with English and Finnish alternates
+
+## CTFs and writeups
+
+- [Back in CTFs](https://mixutin.github.io/blog/back-in-ctfs/): crypto, rev, THEM?! and CryptoHack
+- [CTF writeups](https://mixutin.github.io/writeups/): future challenge solutions
+- [CryptoHack profile](https://cryptohack.org/user/nurminen/)
+- [THEM?! on CTFtime](https://ctftime.org/team/387399/)
