@@ -1,0 +1,20 @@
+name: Portfolio checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Check generated pages
+        run: python3 tools/build.py --check
+      - name: Validate pages, links and content
+        run: python3 -m unittest discover -s tests -v
+      - name: Check JavaScript syntax
+        run: |
+          node --check assets/js/site.js
+          node --check assets/js/scene.js

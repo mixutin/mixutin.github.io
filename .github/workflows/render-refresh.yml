@@ -1,0 +1,28 @@
+name: Prepare static portfolio refresh
+on:
+  push:
+    branches: [portfolio/navy-3d-refresh]
+permissions:
+  contents: write
+concurrency:
+  group: prepare-portfolio-refresh
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Generate and validate static pages
+        run: |
+          python3 tools/build.py
+          python3 -m unittest discover -s tests -v
+          node --check assets/js/site.js
+          node --check assets/js/scene.js
+      - name: Commit generated HTML to the isolated refresh branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html 404.html fi about contact ctf projects blog writeups sitemap.xml llms.txt
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'build: generate bilingual static portfolio pages'
+          git push origin HEAD:portfolio/navy-3d-refresh
