@@ -1,0 +1,2 @@
+@import url('/assets/css/portfolio-base.css');
+@media(max-width:360px){.achievement-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.achievement{display:block;min-width:0}.achievement>div{margin-top:6px}}

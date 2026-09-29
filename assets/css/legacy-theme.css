@@ -1,0 +1,17 @@
+/* Keep historical articles and the detailed case study; harmonise their palette. */
+:root, .theme-ember {
+  color-scheme: dark;
+  --bg: #050b18; --bg-raised: #0a1428; --bg-sunken: #030814;
+  --panel: #0a1428; --panel-2: #0d1b34; --line: #1c2c47; --line-strong: #304b71;
+  --text: #eef4ff; --text-muted: #9faec9; --text-dim: #8195b4;
+  --accent: #568fff; --accent-ink: #8dbdff; --on-accent: #03112b;
+  --accent-soft: #4388ff18; --link: #7bdaee; --link-hover: #c2f3ff;
+  --ok: #7fe1c6; --aether: #6ae2ef; --grid: #244b7715; --scan: transparent;
+  --radius: 14px; --radius-lg: 20px; --maxw: 1180px;
+}
+body { background: radial-gradient(ellipse at 85% 0%, #12264c55, transparent 45%), #050b18; }
+.site-header { background: #050b18ed; backdrop-filter: blur(18px); border-bottom: 1px solid #1c2c47; }
+.card, .featured, .statusbox, .notes { border-color: #1c2c47; box-shadow: 0 20px 65px #0002; }
+.btn-primary { background: #397aea; border-color: #568fff; color: #fff; }
+.site-footer { background: #030814; border-top-color: #1c2c47; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
