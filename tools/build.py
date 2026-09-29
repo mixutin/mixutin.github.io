@@ -44,9 +44,7 @@ def scene(lang, mode='globe', badge=False):
     return f'''<div class="scene" data-scene="{mode}">
 <div class="scene-grid" aria-hidden="true"></div><div class="scene-glow" aria-hidden="true"></div>
 <div class="scene-fallback" aria-hidden="true"></div><canvas aria-hidden="true"></canvas>
-<span class="scene-label" aria-hidden="true">{name} / 0{1 if mode == 'globe' else 2}</span>
 <button class="motion" type="button" aria-pressed="false" data-motion-toggle data-pause="{tr(lang,'Pause motion','Pysäytä liike')}" data-resume="{tr(lang,'Resume motion','Jatka liikettä')}">{tr(lang,'Pause motion','Pysäytä liike')}</button>
-<span class="scene-caption" aria-hidden="true">3D STUDY · {tr(lang,'MOVE YOUR POINTER','LIIKUTA OSOITINTA')}</span>
 {f'<div class="scene-badge">{icon("shield")}<div><strong>CRYPTOHACK · #1</strong><small>GLOBALLY &amp; IN FINLAND</small></div></div>' if badge else ''}
 </div>'''
 
